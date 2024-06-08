@@ -27,6 +27,9 @@ const indexConfig = {
       extensions,
     }),
     postcss({
+      config: {
+        path: './.postcssrc.cjs',
+      },
       plugins: [autoprefixer(), tailwindcss()],
       extract: false,
       modules: false,
